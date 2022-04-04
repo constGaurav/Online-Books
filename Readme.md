@@ -1,8 +1,8 @@
 # Online Books Search Web App
 
-> App is deployed on Amazon Web Services (AWS)
-> Homepage (/): - http://34.217.118.226:3000/ 
-> Search (/search):  http://34.217.118.226:3000/search
+> App is deployed on Amazon Web Services (AWS) <br />
+> Homepage (/): - http://34.217.118.226:3000/ <br />
+> Search (/search):  http://34.217.118.226:3000/search <br />
 
 ### IMPORTANT NOTE: 
 > This issue is due to the fact that **I don't have a Domain Name** (like www. OnlineBooksSearch. com) but it is fine, user can search for books from here(http://34.217.118.226:3000/search) and all the search queries are stored in database (MongoDB Atlas).
