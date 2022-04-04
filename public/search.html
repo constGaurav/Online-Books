@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="797996724490-lmm8ilng7t3m96gsqp8n1c00pvrktjc7.apps.googleusercontent.com">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/books.css">
+    <title>Search Online Books</title>
+
+</head>
+<body>
+    <div class="wrap">
+        <ul class="navbar">
+        <li class="nav"><a href="/search" style="font-weight: bolder;">Search Online Books</a></li>
+        <li class="nav"><a href="/">Home</a></li>
+        <li class="nav"><a href="/search">Search</a></li>
+        <li class="nav"><a href="#">About</a></li>
+        </ul>
+    </div>
+
+    <div class="search-box">
+        <form id="my-form" method="post">
+        <input id="search-text" type="search" name="searchText" placeholder="Book Name or Topic" required>
+        <button class="search-btn" type="submit">Find Books</button>   
+        </form>
+    </div>
+
+    <div id="results">
+    </div>
+
+    <script src="./javaScript/books.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="797996724490-lmm8ilng7t3m96gsqp8n1c00pvrktjc7.apps.googleusercontent.com">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <title>Online Books</title>
+
+</head>
+<body>
+    <div class="wrap">
+        <ul class="navbar">
+        <li class="nav"><a href="/" style="font-weight: bolder;">Online Books</a></li>
+        <li class="nav"><a href="/">Home</a></li>
+        <li class="nav"><a id="search-option" href="/search">Search</a></li>
+        <li class="nav"><a href="#">About</a></li>
+        </ul>
+    </div>
+
+    <center>
+        <div class="card">
+            <div class="text">
+                <img id="profilePic" src="./images/user.jpg">
+                <h3 id="name">Please Sign in</h3>
+            </div>
+        </div>
+    </center>
+
+    <div id="signin" class="g-signin2" data-onsuccess="onSignIn"></div>
+    <div id="data">
+        <button id="signout" type="button" onclick="signOut();">Sign Out</button>
+    </div>
+
+    <script src="javaScript/index.js" async defer></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</body>
+</html>
