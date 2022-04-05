@@ -16,10 +16,10 @@ app.use("/images", express.static(__dirname + "public/images"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Data Base -> Mongoose
-mongoose.connect(process.env.MONGO_COONNECTION_URL, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose
+  .connect(process.env.MONGO_COONNECTION_URL)
+  .then(() => console.log("Database connected!"))
+  .catch((err) => console.log(err));
 
 // create a data schema
 const dataSchema = {
